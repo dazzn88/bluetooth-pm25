@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Bluetooth-pm25</string>
+    <string name="search_device">搜尋裝置</string>
+    <string name="back_home">回首頁</string>
+    <string name="open_bluetooth">開啟藍芽</string>
+    <string name="open_scan_screen">開啟掃描視窗</string>
+    <string name="send">送出</string>
 </resources>
