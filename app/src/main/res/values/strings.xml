@@ -5,4 +5,11 @@
     <string name="open_bluetooth">開啟藍芽</string>
     <string name="open_scan_screen">開啟掃描視窗</string>
     <string name="send">送出</string>
+    <string name="open_pm25_data">量測資料</string>
+
+    <array name="time_range_type">
+        <item>PM2.5/秒</item>
+        <item>>PM2.5/分鐘</item>
+        <item>>PM2.5/小時</item>
+    </array>
 </resources>
