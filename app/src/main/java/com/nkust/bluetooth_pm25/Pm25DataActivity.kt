@@ -55,7 +55,7 @@ class Pm25DataActivity : BaseActivity() {
                             selectIndex = which
                             textSelectTimeRange.text = resources.getStringArray(R.array.time_range_type)[selectIndex]
                             val average = when (selectIndex) {
-                                0 -> 1
+                                0 -> 0
                                 1 -> 1
                                 2 -> 60
                                 else -> 1

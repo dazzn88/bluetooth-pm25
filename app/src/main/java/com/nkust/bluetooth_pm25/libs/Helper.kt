@@ -35,7 +35,8 @@ object Helper {
     }
 
     fun getFieldData(context: Context, fieldId: String, average: Int, callback: FieldDataCallback) {
-        val url = "$API_URL/channels/$CHANNEL_ID/fields/$fieldId.json?average=$average"
+        val averageValue = if (average == 0) "" else "average=$average"
+        val url = "$API_URL/channels/$CHANNEL_ID/fields/$fieldId.json?$averageValue"
         val call = createOkHttpCall(url)
         call.enqueue(object : Callback {
             override fun onFailure(call: Call, e: IOException) {
