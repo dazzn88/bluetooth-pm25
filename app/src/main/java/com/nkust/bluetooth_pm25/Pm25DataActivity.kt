@@ -105,7 +105,9 @@ class Pm25DataActivity : BaseActivity() {
     private fun getLineEntry(dataObjects: List<Feed>): List<Entry> {
         val entries = ArrayList<Entry>()
         for (data in dataObjects) {
-            entries.add(Entry(Utils.convertToDate(data.createdAt).time.toFloat(), data.field1.toFloat()))
+            data.field1?.apply {
+                entries.add(Entry(Utils.convertToDate(data.createdAt).time.toFloat(), data.field1.toFloat()))
+            }
         }
         return entries
     }

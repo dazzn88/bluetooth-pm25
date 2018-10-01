@@ -34,7 +34,7 @@ data class Channel(
 data class Feed(
         @SerializedName("created_at") val createdAt: String,
         @SerializedName("entry_id") val entryId: Int,
-        @SerializedName("field1") val field1: String
+        @SerializedName("field1") val field1: String?
 ) {
     override fun toString(): String {
         return "Feed(createdAt='$createdAt', entryId=$entryId, field1='$field1')"
