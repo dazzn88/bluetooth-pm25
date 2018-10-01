@@ -37,8 +37,10 @@ class Pm25DataActivity : BaseActivity() {
             progressBar.visibility = View.GONE
         }
 
-        override fun onSuccess(channelFieldData: ChannelFieldData) {
-            setData(channelFieldData)
+        override fun onSuccess(channelFieldData: ChannelFieldData?) {
+            channelFieldData?.apply {
+                setData(this)
+            }
             progressBar.visibility = View.GONE
         }
     }

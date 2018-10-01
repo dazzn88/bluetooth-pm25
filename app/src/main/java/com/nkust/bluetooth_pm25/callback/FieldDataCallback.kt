@@ -11,5 +11,5 @@ abstract class FieldDataCallback {
 
     abstract fun onFailure(e: IOException)
 
-    abstract fun onSuccess(channelFieldData: ChannelFieldData)
+    abstract fun onSuccess(channelFieldData: ChannelFieldData?)
 }
